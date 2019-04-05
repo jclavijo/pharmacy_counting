@@ -1,8 +1,6 @@
 # pharmacy_counting
 
-A Clojure library designed to ... well, that part is up to you.
-
-## Usage
+## Setup
 Installing leiningen is necessary to run, as it is a Clojure development tool
 Goto https://github.com/technomancy/leiningen/ to read more
 or
