@@ -37,7 +37,7 @@ function check_project_struct {
 
 # setup testing output folder
 function setup_testing_input_output {
-  TEST_OUTPUT_PATH=${GRADER_ROOT}/temp
+    TEST_OUTPUT_PATH=${GRADER_ROOT}/temp #/tests/${test_folder}
   if [ -d ${TEST_OUTPUT_PATH} ]; then
     rm -rf ${TEST_OUTPUT_PATH}
   fi
@@ -57,7 +57,7 @@ function setup_testing_input_output {
 function compare_outputs {
   NUM_OUTPUT_FILES_PASSED=0
   OUTPUT_FILENAME=top_cost_drug.txt
-  PROJECT_ANSWER_PATH1=${GRADER_ROOT}/temp/output/${OUTPUT_FILENAME}
+  PROJECT_ANSWER_PATH1=${GRADER_ROOT}/tests/${test_folder}/output/${OUTPUT_FILENAME}
   TEST_ANSWER_PATH1=${GRADER_ROOT}/tests/${test_folder}/output/${OUTPUT_FILENAME}
    
   DIFF_RESULT1=$(diff -bB ${PROJECT_ANSWER_PATH1} ${TEST_ANSWER_PATH1} | wc -l)

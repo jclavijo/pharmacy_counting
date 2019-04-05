@@ -3,12 +3,27 @@
 A Clojure library designed to ... well, that part is up to you.
 
 ## Usage
+Installing leiningen is necessary to run, as it is a Clojure development tool
+Goto https://github.com/technomancy/leiningen/ to read more
+or
+Download the steps bellow if lein and java aren't yet installed.
+1. Make sure you have Java installed; OpenJDK version 8 is recommended at this time.
+2. Download the lein script from the stable branch of this project link bellow. 
+https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein
+3. Place it on your $PATH. (~/bin is a good choice if it is on your path.)
+4. Set it to be executable. (chmod +x ~/bin/lein)
 
-FIXME
+## Running the program
+Place the input document somewhere in the project directory, you can use resources.
+Simply type in the console where the path and name of text file are indicated.
+
+lein run "./input/input.txt" "./output/output.txt"
+
+
 
 ## License
 
-Copyright © 2019 FIXME
+Copyright © 2019 Juan-manuel Clavijo
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
