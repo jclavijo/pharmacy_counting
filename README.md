@@ -17,7 +17,13 @@ Simply type in the console where the path and name of text file are indicated.
 
 lein run "./input/input.txt" "./output/output.txt"
 
+The command above runs the code directly, but using the run.sh would run the same set of tests with preset input itcont.txt and top_cost_drug.txt
 
+## Running the tests
+Running the tests can be done with runtest.sh
+To run the development tests on some of the functions, you can use the command:
+
+lein test 
 
 ## License
 
